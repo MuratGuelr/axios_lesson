@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const GetData = async (userId, getAll) => {
+const GetData = async (userId) => {
   const { data: user } = await axios(
     `https://jsonplaceholder.typicode.com/users/${userId}`
   );
